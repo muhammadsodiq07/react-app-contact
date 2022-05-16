@@ -1,15 +1,17 @@
 import React from "react";
 import "./OutputContact.scss";
 
-function OutputContact({ userName, category, phone }) {
+function OutputContact(props) {
   return (
-    <li className="list__item">
-      <h3 className="name">{userName}</h3>
+    <div>
+      <li className="list__item">
+      <h3 className="name">{props.name}</h3>
       <a className="phone" href="/">
-        {phone}
+        {props.number}
       </a>
-      <p className="relation">{category}</p>
+      <p className="relation">{props.category}</p>
     </li>
+    </div>
   );
 }
 
