@@ -1,20 +1,19 @@
-@import './assets/scss/main.scss';
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.maunaa {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-}
-
-.maun {
-  width: 5000px;
-}
-
-.sss {
-  position: relative;
-  right: 500px;
-  top: 100px;
-}
-
-.list__item {
-  width: 300px;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
